@@ -1,0 +1,161 @@
+/*------
+start header 
+------------*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    background-color:indigo;
+    padding: 50px;
+}
+
+ header{
+    font-family: 'Roboto', sans-serif;
+    background-color:brown;
+}
+
+nav ul{
+    display: flex;
+    margin-left: 50px;
+}
+.float{
+    float: right;
+}
+
+
+nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: skyblue;
+    font-size: 30px;
+}
+
+nav li:hover{
+   background-color:white;
+
+} 
+
+span{
+    justify-content: space-between;
+}
+
+section{
+    height: 500px;
+    padding-bottom: 150px;
+}
+.top-banner{
+    background-image: url("images/top-banner.png");
+    background-repeat: no-repeat;
+}
+.half-width{
+    width:40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+h1{
+    font-size: 50px;
+}
+h1 span{
+    color:skyblue;
+}
+.half-width img{
+    width: 100%;
+}
+
+.half-width img:hover{
+    transition:width 5s ease,width 5s ease;
+    width: 400px;
+    height: 400px;
+    transform: rotate(2s);
+    
+}
+
+.anchor-button{
+    text-decoration: none;
+    background: linear-gradient(45deg, blue,skyblue);
+    padding: 10px 40px;
+    border-radius: 5px;
+    color:pink;
+    font-weight: 700;
+}
+
+
+/*---------
+header end
+-------------*/
+/* @media (max-width:992px){
+    .top-players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        }
+    .blogs{
+         grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    @media (max-width:668px){
+        .top-players, .courses{
+            grid-template-columns: repeat(1, 1fr);
+            }
+         .blog{
+             display: block;
+         }   
+        } */
+/*-----------
+Main section start
+---------------- */
+
+main{
+    display:grid;
+}
+.all-players{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   width: 80%;
+   grid-gap: 34px 17px;
+   margin-left: 144px;
+   border-radius: 10px;
+   background-image:url(images/sky.jpg);
+    
+
+}
+
+.img-style{
+    width:100%;
+    height:50%;
+
+}
+
+.Card{
+    width:300px;
+    margin:10px;
+    box-sizing:border-box;
+    box-shadow:1px 2px 5px black;
+    border-radius: 10px;
+    
+}
+
+.card-body{
+    padding:5px;
+
+
+}
+
+.card-title{
+    font-size:2rem;
+    text-align:center;
+}
+.pra{
+    text-align: justify;  
+    background-color: cornsilk;
+}
+
+.Card:hover{
+    box-shadow:6px 12px 10px brown;
+    padding:10px;
+
+}
